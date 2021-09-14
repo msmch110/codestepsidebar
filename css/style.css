@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* font-family: 'Noto Sans JP', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  list-style: none;
+}
+/* ----------------------------------
+general
+---------------------------------- */
+
+.pc {
+  display: none;
+}
+.sp {
+  display: block;
+}
+@media screen and (min-width:960px) {
+  .pc {
+    display: block;
+  }
+  .sp {
+    display: none;
+  }
+}
+h2 {
+  display: flex;
+  align-items: center; /* 垂直中心 */
+  justify-content: center; /* 水平中心 */
+}
+.h2::before, .h2::after {
+  border-top: 1px solid;
+  content: "";
+  width: 3em; /* 線の長さ */
+}
+.h2::before {
+  margin-right: 1em; /* 文字の右隣 */
+}
+.h2::after {
+  margin-left: 1em; /* 文字の左隣 */
+}
+
+/* ----------------------------------
+pjt-info_area
+---------------------------------- */
+.pjt-pic {
+  display: block;
+  content: "";
+  height: auto;
+  width: 45%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.pic_01 {
+  background-image: url(../img/project1.jpg);
+}
+.pic_02 {
+  background-image: url(../img/project2.jpg);
+}
+.pic_03 {
+  background-image: url(../img/project3.jpg);
+}
+.pic_04 {
+  background-image: url(../img/project4.jpg);
+}
+
+
+/* ----------------------------------
+feature_area
+---------------------------------- */
+
+
+
+
+
