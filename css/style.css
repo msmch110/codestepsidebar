@@ -16,17 +16,17 @@ general
 ---------------------------------- */
 
 .pc {
-  display: none;
-}
-.sp {
   display: block;
 }
-@media screen and (min-width:961px) {
+.sp {
+  display: none;
+}
+@media screen and (max-width:960px){
   .pc {
-    display: block;
+    display: none;
   }
   .sp {
-    display: none;
+    display: block;
   }
 }
 h2 {
@@ -58,6 +58,15 @@ h2::after {
 .qa_area {
   max-width: 860px;
   margin: 0 auto;
+}
+@media screen and (max-width:960px){
+  h2 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  h2::before, h2::after {
+    width: 7em;
+  }
 }
 /* ----------------------------------
 header sp
@@ -128,28 +137,28 @@ main_area
 .main_area {
   width: 100%
 }
-@media screen and (min-width:961px){
+@media screen and (max-width:960px){
   
 }
 /* ----------------------------------
 video
 ---------------------------------- */
 .video {
-  height: 80vh;
+  height: 100vh;
   width: 100%
 }
 .top-video {
   position: fixed;
   top: 0;
   z-index: -1;
-  width: 960px;
+  width: 1140px;
 }
-@media screen and (min-width:961px){
+@media screen and (max-width:960px){
   .video {
-    height: 100vh;
+    height: 80vh;
   }
   .top-video {
-    width: 1140px;
+    width: 960px;
   }
 }
 /* ----------------------------------
@@ -164,6 +173,9 @@ info_area
   padding-top: 80px;
   padding-bottom: 160px;
 }
+/* ----------------------------------
+pjt-info_area
+---------------------------------- */
 .pjt-info_area {
   margin-bottom: 110px;
   background-color: transparent;
@@ -202,6 +214,18 @@ info_area
   bottom: 5px;
   left: 8px;
   z-index: 3;
+}
+@media screen and (max-width:960px) {
+  .info_area {
+    padding-bottom: 120px;
+  }
+  .pjt-info_area {
+    margin-bottom: 90px;
+  }
+  .pjt_item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 /* ----------------------------------
 feature_area
@@ -248,6 +272,14 @@ detail-info_area
   background-color: #fff;
   padding-top: 120px;
 }
+@media screen and (max-width:960px) {
+  .detail-info_area {
+    padding-top: 60px;
+  }
+}
+/* ----------------------------------
+flow_area
+---------------------------------- */
 .flow_area {
   padding-bottom: 114px;
 }
@@ -261,7 +293,6 @@ detail-info_area
 }
 .flow-image {
   position: relative;
-  width: 200px;
 }
 .flow-image_item {
   width: 200px;
@@ -297,7 +328,7 @@ detail-info_area
   position: absolute;
   z-index: 1;
   left: 50%;
-  top: 40px;
+  top: 0px;
   transform: translateX(-50%);
 }
 .flow-text_list {
@@ -323,12 +354,43 @@ detail-info_area
   font-size: 20px;
   font-weight: 400;
   padding-bottom: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   border-bottom: 1px solid #000;
 }
 .flow-text_description {
   color: #000;
   font-size: 16px;
+}
+@media screen and (max-width:960px) {
+  .flow_area {
+    padding-bottom: 77px;
+  }
+  .flow_area_text {
+    margin-bottom: 30px;
+  }
+  .flow_content {
+    flex-direction: column;
+  }
+  .flow-image {
+    margin-bottom: 20px;
+  }
+  .flow-image_list {
+    padding: 0 20px;
+  }
+  .flow-image_item {
+    width: 100%;
+    padding-top: 30px;
+  }
+  .flow-image_item::after {
+    border-left: calc(50vw - 40px) solid transparent;
+    border-right: calc(50vw - 40px) solid transparent;
+  }
+  .flow-text_list {
+    margin-left: 50px;
+  }
+  .flow-text_item {
+    margin-bottom: 43px;
+  }
 }
 /* ----------------------------------
 qa_area
@@ -371,11 +433,28 @@ qa_area
   justify-content: center;
 }
 .qa-icon {
-  margin-bottom: 3px;
+  margin-bottom: 5px;
 }
 .qa_item_btn p {
   color: #000;
   font-size: 14px;
+}
+@media screen and (max-width:960px) {
+  .qa_area {
+    padding-bottom: 100px;
+  }
+  .qa_area_text {
+    margin-bottom: 30px;
+  }
+  .qa_list {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 60%;
+  }
+  .qa_item {
+    margin-bottom: 20px;
+    width: 100%;
+  }
 }
 /* ----------------------------------
 footer
