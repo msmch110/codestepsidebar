@@ -14,53 +14,64 @@
   <body>
     <header class="sp">
       <div class="header_box">
-        <img src="img/logo.svg">
+        <img class="header-logo" src="img/logo.svg">
         <span class="hbg-menu"></span>
       </div>
     </header>
     <div id="sidebar_maker">
       <div class="sidebar_area pc">
-        <img class="pc" src="img/logo.svg" alt="アイコン">
-        <ul class="gnav_list">
-          <li class="menu_item"><a href="#">私たちについて</a></li>
-          <li class="menu_item"><a href="#">サービス</a></li>
-          <li class="menu_item"><a href="#">商品情報</a></li>
-          <li class="menu_item"><a href="#">展示会</a></li>
-          <li class="menu_item"><a href="#">暮らしの日記</a></li>
-          <li class="menu_item"><a href="#">会社概要</a></li>
-        </ul>
-        <ul class="sns_list">
-          <li class="sns_item"><a href="#">Twitter</a></li>
-          <li class="sns_item"><a href="#">facebook</a></li>
-          <li class="sns_item"><a href="#">instagram</a></li>
-        </ul>
+        <div class="sidebar_fixed_box">
+          <img class="header-logo pc" src="img/logo.svg" alt="アイコン">
+          <ul class="gnav_list">
+            <li class="menu_item"><a href="#">私たちについて</a></li>
+            <li class="menu_item"><a href="#">サービス</a></li>
+            <li class="menu_item"><a href="#">商品情報</a></li>
+            <li class="menu_item"><a href="#">展示会</a></li>
+            <li class="menu_item"><a href="#">暮らしの日記</a></li>
+            <li class="menu_item"><a href="#">会社概要</a></li>
+          </ul>
+          <ul class="sns_list">
+            <li class="sns_item"><a href="#">Twitter</a></li>
+            <li class="sns_item"><a href="#">facebook</a></li>
+            <li class="sns_item"><a href="#">instagram</a></li>
+          </ul>
+        </div>
       </div>
       <div class="main_area">
         <div class="video">
-          <video src="video/mainvideo.mp4"></video>
+          <video class="top-video" src="video/mainvideo.mp4" autoplay muted playsinline></video>
         </div>
+        <!-- <div class="fixed-pic"></div> -->
         <div class="info_area">
           <div class="pjt-info_area">
             <h2>建築事例をご紹介</h2>
             <ul class="pjt_list">
               <li class="pjt_item">
-                <a href="#" class="pjt-pic pic_01">
-                    <p class="pjt-pic_text">PROJECT_01</p>
+                <a href="#">
+                  <div class="shadow_box"></div>
+                  <img class="pjt-pic" src="img/project1.jpg">
+                  <p class="pjt-pic_text">PROJECT_01</p>
                 </a>
               </li>
               <li class="pjt_item">
-                <a href="#" class="pjt-pic pic_02">
-                    <p class="pjt-pic_text">PROJECT_02</p>
+                <a href="#">
+                  <div class="shadow_box"></div>
+                  <img class="pjt-pic" src="img/project2.jpg">
+                  <p class="pjt-pic_text">PROJECT_02</p>
                 </a>
               </li>
               <li class="pjt_item">
-                <a href="#" class="pjt-pic pic_03">
-                    <p class="pjt-pic_text">PROJECT_03</p>
+                <a href="#">
+                  <div class="shadow_box"></div>
+                  <img class="pjt-pic" src="img/project3.jpg">
+                  <p class="pjt-pic_text">PROJECT_03</p>
                 </a>
               </li>
               <li class="pjt_item">
-                <a href="#" class="pjt-pic pic_04">
-                    <p class="pjt-pic_text">PROJECT_04</p>
+                <a href="#">
+                  <div class="shadow_box"></div>
+                  <img class="pjt-pic" src="img/project4.jpg">
+                  <p class="pjt-pic_text">PROJECT_04</p>
                 </a>
               </li>
             </ul>
@@ -69,19 +80,25 @@
             <h2>明るいHOUSEの特徴</h2>
             <ul class="feature_list">
               <li class="feature_item">
-                <a href="#" class="feature_btn"></a>
-                <p>デザイン</p>
-                <p>シンプルで美しいデザイン</p>
+                <a href="#" class="feature_btn">
+                  <p class="feature_btn_text">design</p>
+                </a>
+                <p class="feature_title">デザイン</p>
+                <p class="feature_text">シンプルで美しいデザイン</p>
               </li>
               <li class="feature_item">
-                <a href="#" class="feature_btn"></a>
-                <p>性能</p>
-                <p>耐震性・耐久性・省エネ性・快適性</p>
+                <a href="#" class="feature_btn">
+                  <p class="feature_btn_text">quality</p>
+                </a>
+                <p class="feature_title">性能</p>
+                <p class="feature_text">耐震性・耐久性・省エネ性・快適性</p>
               </li>
               <li class="feature_item">
-                <a href="#" class="feature_btn"></a>
-                <p>サポート</p>
-                <p>ホームセキュリティー完備</p>
+                <a href="#" class="feature_btn">
+                  <p class="feature_btn_text">support</p>
+                </a>
+                <p class="feature_title">サポート</p>
+                <p class="feature_text">ホームセキュリティー完備</p>
               </li>
             </ul>
           </div>
@@ -90,61 +107,66 @@
         <div class="detail-info_area">
           <div class="flow_area">
             <h2>家ができるまでの流れ</h2>
-            <p>お問い合わせいただいてから、家が完成するまでの流れです。</p>
+            <p class="flow_area_text">お問い合わせいただいてから、家が完成するまでの流れです。</p>
             <div class="flow_content">
               <div class="flow-image">
-                <ul class="flow-image_list">
-                  <li class="flow-image_item">1.ヒアリング</li>
-                  <li class="flow-image_item">2.プラン提案</li>
-                  <li class="flow-image_item">3.契約</li>
-                  <li class="flow-image_item">4.着工</li>
-                  <li class="flow-image_item">5.完成</li>
-                </ul>
+                <ol class="flow-image_list">
+                  <li class="flow-image_item"><p>1.ヒアリング</p></li>
+                  <li class="flow-image_item"><p>2.プラン提案</p></li>
+                  <li class="flow-image_item"><p>3.契約</p></li>
+                  <li class="flow-image_item"><p>4.着工</p></li>
+                  <li class="flow-image_item"><p>5.完成</p></li>
+                </ol>
                 <div class="yellow-arrow"></div>
               </div>
               <ul class="flow-text_list">
                 <li class="flow-text_item">
+                  <span class="flow_num">1</span>
                   <h3 class="flow-text_title">ヒアリング</h3>
-                  <p class="flow-text_description"></p>
+                  <p class="flow-text_description">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                 </li>
                 <li class="flow-text_item">
+                  <span class="flow_num">2</span>
                   <h3 class="flow-text_title">プラン提案</h3>
-                  <p class="flow-text_description"></p>
+                  <p class="flow-text_description">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                 </li>
                 <li class="flow-text_item">
+                  <span class="flow_num">3</span>
                   <h3 class="flow-text_title">契約</h3>
-                  <p class="flow-text_description"></p>
+                  <p class="flow-text_description">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                 </li>
                 <li class="flow-text_item">
+                  <span class="flow_num">4</span>
                   <h3 class="flow-text_title">着工</h3>
-                  <p class="flow-text_description"></p>
+                  <p class="flow-text_description">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                 </li>
                 <li class="flow-text_item">
+                  <span class="flow_num">5</span>
                   <h3 class="flow-text_title">完成</h3>
-                  <p class="flow-text_description"></p>
+                  <p class="flow-text_description">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="qa">
+          <div class="qa_area">
             <h2>お問い合わせ</h2>
-            <p>お問い合わせは下記からお願いいたします。</p>
+            <p class="qa_area_text"">お問い合わせは下記からお願いいたします。</p>
             <ul class="qa_list">
               <li class="qa_item">
                 <a href="#" class="qa_item_btn">
-                  <img src="img/icon-document.png">
+                  <img class="qa-icon" src="img/icon-document.png">
                   <p>資料請求</p>
                 </a>
               </li>
               <li class="qa_item">
                 <a href="#" class="qa_item_btn">
-                  <img src="img/icon-seminar.png">
+                  <img class="qa-icon"  src="img/icon-seminar.png">
                   <p>web説明会</p>
                 </a>
               </li>
               <li class="qa_item">
                 <a href="#" class="qa_item_btn">
-                  <img src="img/icon-talk.png">
+                  <img class="qa-icon"  src="img/icon-talk.png">
                   <p>個別相談</p>
                 </a>
               </li>
