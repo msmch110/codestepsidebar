@@ -569,3 +569,27 @@ footer small {
   color: #fff;
   font-size: 12px;
 }
+@media screen and (max-width:767px) {
+  .footer-menu_list{
+    flex-wrap: wrap;
+  }
+  .footer-menu_item {
+    margin-bottom: 10px;
+    width:30%;
+  }
+  .footer-menu_item:nth-of-type(3){
+    border-right: none;
+  }
+  .footer-menu_item a {
+    font-size: 12px;
+  }
+  footer small {
+    color: #fff;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width:424px) {
+  .footer-menu_item {
+    padding: 0;
+  }
+}
