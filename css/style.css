@@ -255,6 +255,7 @@ pjt-info_area
 .pjt_item a {
   display: block;
   position: relative;
+  overflow: hidden;
 }
 .shadow_box {
   position: absolute;
@@ -268,6 +269,7 @@ pjt-info_area
   display: block;
   width: 100%;
   position: relative;
+  object-fit: cover;
   z-index: 10;
 }
 .pjt-pic_text {
